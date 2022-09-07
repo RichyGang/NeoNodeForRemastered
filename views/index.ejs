@@ -1,0 +1,19 @@
+
+<form method="post" action="/ressource/add">
+<!--     <label>Nouveau user</label><br> -->
+<!--     <input type="text" name="user_name"> -->
+<!--     <br> -->
+<!--     <br> -->
+    <label>Nouvelle ressource</label><br>
+    <input type="text" name="ressource">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<h1>Proposals</h1>
+<ul>
+<% proposals.forEach(function(proposal){  %>
+    <li><%= proposal %></li>
+<% }) %>
+</ul>
